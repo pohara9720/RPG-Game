@@ -1,0 +1,12 @@
+body {
+	background: url(http://wallpaperpulse.com/img/917080.jpg);
+}
+
+.fighter {
+	height: 150px;
+	width:150px;
+	border-radius: 50%;
+}
+h2, h1{
+	color: white;
+}
