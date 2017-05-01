@@ -1,22 +1,38 @@
+$(document).ready(function(){
+var conor = document.getElementById("cmb");
+var don = document.getElementById("dcb");
+var jon = document.getElementById("jjb");
+var andy = document.getElementById("asb");
+var octagon=true;
+var fighters=["Conor", "Donald", "Jon", "Anderson"];
 
-var fighter=["Mcgregor","Cerone","Silva","Jones"];
 
+/////////////////////////////////////picking a fighter///////////////////////////////
+function select(){
 	$("#cmb").on("click", function(){
-	$("#enemyQue").append("#jjb, #asb, #dcb");
+ 	$("#enemyQue").append(jon,andy,don);
+
 });
 	$("#asb").on("click", function(){
-	$("#enemyQue").append("#cmb, #asb, #dcb");
+ 	$("#enemyQue").append(jon,conor,don);
 });
-
 	$("#dcb").on("click", function(){
-	$("#enemyQue").append("#jjb, #asb, #cmb");
+ 	$("#enemyQue").append(jon,andy,conor);
 });
-
 	$("#jjb").on("click", function(){
-	$("#enemyQue").append("#cmb, #asb,#dcb");
+ 	$("#enemyQue").append(conor,andy,don);
+});
+
+};
+
+$(".fighter").on("click", function(){
+select();
+console.log("working");
+
 });
 
 
+});
 
 
 
