@@ -3,10 +3,28 @@ body {
 }
 
 .fighter {
-	height: 150px;
-	width:150px;
+	height: 100px;
+	width: 100px;
 	border-radius: 50%;
+
 }
-h2, h1{
+
+
+div {
 	color: white;
+	font-size: 20px;
+}
+button{
+	background:url(http://www.ufcorlando.com/static/ufcbackground.jpg);
+	color:white;
+	margin: 5px;
+}
+#jjb {
+	width:162px;
+}
+#attack {
+	text-align: center;
+}
+.select {
+	text-align: center;
 }
