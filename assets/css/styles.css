@@ -1,10 +1,10 @@
 body {
-	background: url(http://wallpaperpulse.com/img/917080.jpg);
+	background: url(http://www.mmaplus.co.uk/wp-content/uploads/2017/01/091214-UFC-A-general-view-of-the-Octagon-and-arena-PI.vresize.1200.675.high_.12.jpeg);
 }
 
 .fighter {
-	height: 100px;
-	width: 100px;
+	height: 75px;
+	width: 75px;
 	border-radius: 50%;
 
 }
@@ -23,8 +23,19 @@ button{
 	width:162px;
 }
 #attack {
+	float: left;
+	
+}
+#octagon {
 	text-align: center;
 }
-.select {
+h1 {
+	text-align: right;
+	color: white;
+}
+/*.select {
 	text-align: center;
 }
+#enemyQue{
+	text-align: center;
+}*/
