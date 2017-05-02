@@ -18,26 +18,30 @@ $(document).ready(function() {
 
 
     // /////////////////////////////////////conor///////////////////////////////
-    
-        $("#cmb").on("click", function() {  
-        if (octagon===false){              
-            $("#enemyQue").append(cFighters);
-            $("#charSel").append(conor);
-        }
-        else(octagon===true)
-        	$(don).on("click",function(){
-        		$("#Octagon").append(don);
 
-        	});
-        $(jon).on("click",function(){
-        		$("#Octagon").append(jon);
+$("#cmb").on("click", function() {
+    if (octagon === false) {
+        $("#enemyQue").append(cFighters);
+        $("#charSel").append(conor);
+        octagon = true;
+    }
+    if (octagon === true) {
 
-        	});
-        $(andy).on("click",function(){
-        		$("#Octagon").append(andy);
+        $(don).on("click", function() {
+            $("#Octagon").append(don);
 
-        	});
         });
+        $(jon).on("click", function() {
+            $("#Octagon").append(jon);
+
+        });
+        $(andy).on("click", function() {
+            $("#Octagon").append(andy);
+
+        });
+    };
+});
+
     
     // /////////////////////////////////////andy///////////////////////////////
 
@@ -45,8 +49,11 @@ $(document).ready(function() {
         	if (octagon===false){ 
             $("#enemyQue").append(aFighters);
             $("#charSel").append(andy);
+            octagon= true;
+
+
         }
-          else(octagon===true)
+          if (octagon===true){
         	$(don).on("click",function(){
         		$("#Octagon").append(don);
 
@@ -59,6 +66,7 @@ $(document).ready(function() {
         		$("#Octagon").append(conor);
 
         	});
+    };
         });
     
     //  /////////////////////////////////////don///////////////////////////////
@@ -67,8 +75,9 @@ $(document).ready(function() {
         	if (octagon===false){ 
             $("#enemyQue").append(dFighters);
             $("#charSel").append(don);
+            octagon=true;
         }
-          else(octagon===true)
+          if(octagon===true){
         	$(conor).on("click",function(){
         		$("#Octagon").append(conor);
 
@@ -81,6 +90,7 @@ $(document).ready(function() {
         		$("#Octagon").append(andy);
 
         	});
+    };
         });
     
   /////////////////////////////////jon///////////////////////////////
@@ -89,8 +99,9 @@ $(document).ready(function() {
         	if (octagon===false){ 
             $("#enemyQue").append(jFighters);
             $("#charSel").append(jon);
+            octagon=true;
         }
-          else(octagon===true)
+          if(octagon===true){
         	$(conor).on("click",function(){
         		$("#Octagon").append(conor);
 
@@ -103,6 +114,7 @@ $(document).ready(function() {
         		$("#Octagon").append(andy);
 
         	});
+    };
         });
     
 
