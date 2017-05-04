@@ -1,6 +1,5 @@
 $(document).ready(function() {
 
-var fal=false;
 
 
 ////moves characters to select and enemyque
@@ -40,7 +39,7 @@ if (attack <= 0){
   alert("You've been KO'd");
 }
 if (damage <= 0){
-  $(".enemyReady").fadeOut(".enemyReady");
+  $(".enemyReady").remove(".enemyReady");
 }
 
 });
